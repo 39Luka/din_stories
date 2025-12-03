@@ -27,7 +27,7 @@ const ACTOR_LARGO = {
 export default {
     title: 'Components/List',
     component: List,
-    tags: ['autodocs'],
+  //  tags: ['autodocs'],
     parameters: {
         layout: 'centered', 
     },
