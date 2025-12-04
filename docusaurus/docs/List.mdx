@@ -1,0 +1,60 @@
+---
+id: List
+title: Componente List 
+---
+
+import List from '../components/List.jsx'
+
+
+# 📘 Componente **List**
+
+El componente **List** es una tarjeta reutilizable diseñada para mostrar información de un actor, personaje u otro elemento destacable.  
+Incluye imagen, nombre y descripción —y además cuenta con **características avanzadas de accesibilidad** y un modo destacado mediante `esNota10`.
+
+---
+
+## 🧩 **Descripción del Componente**
+
+`List` muestra:
+
+- Una **imagen** (`foto`)
+- Un **título** (`nombre`)
+- Una **descripción** (`children`)
+- Un estilo destacado cuando `esNota10 = true`
+- Etiquetas ARIA mejoradas para lectores de pantalla
+
+Esto lo convierte en un componente adecuado para listados, tarjetas de personas, actores o cualquier item informativo.
+
+
+
+## 🎛️ **Ejemplos**
+
+### Default (Básico)
+
+<List
+  nombre="Haley Joel Osment"
+  esNota10={false}
+  foto="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Haley_Joel_Osment_TIFF_2014.jpg/500px-Haley_Joel_Osment_TIFF_2014.jpg"
+>
+  Haley Joel Osment es un actor estadounidense conocido por su interpretación del niño que 've gente muerta' en 'El sexto sentido'.
+</List>
+
+### Destacado (Nota 10)
+
+<List
+  nombre="Tom Hanks"
+  esNota10={true}
+  foto="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/TomHanksPrincEdw031223_%2811_of_41%29_%28cropped%29.jpg/330px-TomHanksPrincEdw031223_%2811_of_41%29_%28cropped%29.jpg"
+>
+  Tom Hanks es un actor estadounidense ganador del Óscar por interpretar a Forrest Gump.
+</List>
+
+### Nombre y Descripción Largos
+
+<List
+  nombre='Leonardo Sbaraglia (Protagonista de "Concursante")'
+  esNota10={false}
+  foto="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Leonardo_Sbaraglia_en_la_presentaci%C3%B3n_de_la_segunda_temporada_de_%E2%80%9C99%2C99%25._La_ciencia_de_las_Abuelas%E2%80%9D_%2816670703837%29_%28cropped%29.jpg/330px-Leonardo_Sbaraglia_en_la_presentaci%C3%B3n_de_la_segunda_temporada_de_%E2%80%9C99%2C99%25._La_ciencia_de_las_Abuelas%E2%80%9D_%2816670703837%29_%28cropped%29.jpg"
+>
+  Leonardo Sbaraglia es un actor argentino que protagoniza 'Concursante'. Su carrera se ha desarrollado exitosamente tanto en Argentina como en España, destacando por su intensidad dramática y versatilidad en roles complejos.
+</List>
